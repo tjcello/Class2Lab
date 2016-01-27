@@ -12,6 +12,25 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
+        <h1>Tic Tac Toe (Doesn't Work)</h1>
+        <table width="200" border="1">
+            <tbody>
+                <tr>
+                    <td align="center">X</td>
+                    <td align="center">O</td>
+                    <td align="center">X</td>
+                </tr>
+                <tr>
+                    <td align="center">O</td>
+                    <td align="center">X</td>
+                    <td align="center">O</td>
+                </tr>
+                <tr>
+                    <td align="center">X</td>
+                    <td align="center">O</td>
+                    <td align="center">X</td>
+                </tr>
+            </tbody>
+        </table>
     </body>
 </html>
