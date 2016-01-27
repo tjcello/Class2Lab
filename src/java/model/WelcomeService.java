@@ -8,16 +8,17 @@ public class WelcomeService {
     
 
     public String getTimeOfDay() {
-        int time = LocalDateTime.now().getHour();
-        String greeting = "";
-        if (time >= 0 && time < 12) {
-            greeting = "Morning";
-        } else if (time >= 12 && time <= 17) {
-            greeting = "Afternoon";
+        int hour = LocalDateTime.now().getHour();
+        String timeOfDay = "";
+        
+        if (hour >= 0 && hour < 12) {
+            timeOfDay = "Morning";
+        } else if (hour >= 12 && hour <= 17) {
+            timeOfDay = "Afternoon";
         } else {
-            greeting = "Evening";
+            timeOfDay = "Evening";
         }
-        return greeting;
+        return timeOfDay;
     }
     
     public String addNameToGreeting(String name){
