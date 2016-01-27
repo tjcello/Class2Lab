@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package activity2;
+package controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -17,7 +17,7 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Thomas
  */
-@WebServlet(name = "PageGenerator", urlPatterns = {"/PageGenerator"})
+@WebServlet(name = "PageGenerator", urlPatterns = {"/pager"})
 public class PageGenerator extends HttpServlet {
 
     /**
@@ -37,10 +37,29 @@ public class PageGenerator extends HttpServlet {
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet PageGenerator</title>");            
+            out.println("<title>Servlet PageGenerator</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet PageGenerator at " + request.getContextPath() + "</h1>");
+            out.println("<h1>Tic Tac Toe (Doesn't Work)</h1>\n"
+                    + "<table width=\"200\" border=\"1\">\n"
+                    + "  <tbody>\n"
+                    + "    <tr>\n"
+                    + "      <td align=\"center\">X</td>\n"
+                    + "      <td align=\"center\">O</td>\n"
+                    + "      <td align=\"center\">X</td>\n"
+                    + "    </tr>\n"
+                    + "    <tr>\n"
+                    + "      <td align=\"center\">O</td>\n"
+                    + "      <td align=\"center\">X</td>\n"
+                    + "      <td align=\"center\">O</td>\n"
+                    + "    </tr>\n"
+                    + "    <tr>\n"
+                    + "      <td align=\"center\">X</td>\n"
+                    + "      <td align=\"center\">O</td>\n"
+                    + "      <td align=\"center\">X</td>\n"
+                    + "    </tr>\n"
+                    + "  </tbody>\n"
+                    + "</table>");
             out.println("</body>");
             out.println("</html>");
         }
